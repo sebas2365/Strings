@@ -19,11 +19,11 @@ public class Strings {
         //Scanner para leer de teclado
         Scanner teclado= new Scanner (System.in);
         
-        //variables a usar
+        //variables string a usar
         String nombre, apellido;
         
         //Pedimos nombre y apellido
-        System.out.println("Introduce tu nombre  : ");
+        System.out.println("Introduce tu nombre: ");
         nombre=teclado.nextLine();
         
         System.out.println("Introduce tu apellido: ");
@@ -52,15 +52,19 @@ public class Strings {
             return codigo;
         }
         else{
+            
             System.out.println("El apellido el muy corto");
+            
             System.out.println("Introduce tu segundo apellido:");
             apellido_2=teclado.nextLine();
             
             if(apellido_2.length() >= 3)
                 codigo=nombre.substring(0, 1)+apellido_2.substring(0, 3);
+            
             else
                 if(apellido.length() >= apellido_2.length())
                     codigo=nombre.substring(0, 1)+apellido.substring(0, 3);
+                
                 else
                     codigo=nombre.substring(0, 1)+apellido_2.substring(0, 3);
             
