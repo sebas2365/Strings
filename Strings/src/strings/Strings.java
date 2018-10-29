@@ -23,7 +23,7 @@ public class Strings {
         String nombre, apellido;
         
         //Pedimos nombre y apellido
-        System.out.println("Introduce tu nombre: ");
+        System.out.println("Introduce tu nombre  : ");
         nombre=teclado.nextLine();
         
         System.out.println("Introduce tu apellido: ");
